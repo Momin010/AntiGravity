@@ -1,0 +1,11 @@
+.terminal-app-xterm {
+    height: 100%;
+    background: #1e1e1e;
+    padding: 10px;
+    overflow: hidden;
+
+    .terminal-container {
+        height: 100%;
+        width: 100%;
+    }
+}

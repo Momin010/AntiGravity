@@ -1,0 +1,36 @@
+.xcode-app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+
+    .toolbar {
+        height: 40px;
+        background: #2d2d2d;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        border-bottom: 1px solid #1e1e1e;
+
+        .file-name {
+            color: #ccc;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .save-btn {
+            background: #007aff;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+
+            &:hover {
+                background: #0051d5;
+            }
+        }
+    }
+}

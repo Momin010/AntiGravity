@@ -1,0 +1,39 @@
+.menu-bar {
+    width: 100%;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.3); // Light mode default, can be dynamic
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 13px;
+    color: white; // Assuming dark wallpaper for now
+    z-index: 900;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+    .left,
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .apple-logo {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    .app-name {
+        font-weight: 700;
+    }
+
+    .clock {
+        font-variant-numeric: tabular-nums;
+    }
+
+    span,
+    div {
+        cursor: default;
+    }
+}

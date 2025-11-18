@@ -1,0 +1,41 @@
+.terminal-app {
+    height: 100%;
+    background: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .history {
+        flex: 1;
+
+        .line {
+            white-space: pre-wrap;
+            margin-bottom: 4px;
+        }
+    }
+
+    .input-line {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        .prompt {
+            color: #30d158;
+            margin-right: 8px;
+        }
+
+        input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.settings-app {
+    display: flex;
+    height: 100%;
+    background: white;
+
+    .sidebar {
+        width: 200px;
+        background: #f5f5f5;
+        padding: 20px 0;
+        border-right: 1px solid #e0e0e0;
+
+        .section-title {
+            padding: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            padding: 8px 20px;
+            cursor: pointer;
+            transition: background 0.2s;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.05);
+            }
+
+            &.active {
+                background: #007aff;
+                color: white;
+            }
+        }
+    }
+
+    .content {
+        flex: 1;
+        padding: 40px;
+        overflow-y: auto;
+
+        h2 {
+            margin: 0 0 30px 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .setting-group {
+            margin-bottom: 30px;
+
+            .setting-label {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 12px;
+                color: #333;
+            }
+
+            .theme-selector {
+                display: flex;
+                gap: 16px;
+
+                .theme-option {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 20px 30px;
+                    border: 2px solid #e0e0e0;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.2s;
+
+                    svg {
+                        font-size: 32px;
+                        color: #666;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #666;
+                    }
+
+                    &.active {
+                        border-color: #007aff;
+                        background: rgba(0, 122, 255, 0.05);
+
+                        svg,
+                        span {
+                            color: #007aff;
+                        }
+                    }
+
+                    &:hover:not(.active) {
+                        border-color: #ccc;
+                    }
+                }
+            }
+
+            input[type="text"] {
+                width: 300px;
+                padding: 8px 12px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 14px;
+                outline: none;
+
+                &:focus {
+                    border-color: #007aff;
+                }
+            }
+
+            .setting-description {
+                margin-top: 8px;
+                font-size: 12px;
+                color: #888;
+            }
+
+            .about-info {
+                p {
+                    margin: 8px 0;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark"] .settings-app {
+    background: #1e1e1e;
+    color: #f0f0f0;
+
+    .sidebar {
+        background: #2d2d2d;
+        border-right-color: #3d3d3d;
+
+        .menu-item {
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+            }
+        }
+    }
+
+    .content {
+        .setting-group {
+            .setting-label {
+                color: #f0f0f0;
+            }
+
+            input[type="text"] {
+                background: #2d2d2d;
+                border-color: #3d3d3d;
+                color: #f0f0f0;
+            }
+
+            .about-info p {
+                color: #ccc;
+            }
+        }
+    }
+}

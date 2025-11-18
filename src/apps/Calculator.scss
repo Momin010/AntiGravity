@@ -1,0 +1,60 @@
+.calculator {
+    height: 100%;
+    background: rgba(30, 30, 30, 0.9);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+    .display {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        font-size: 48px;
+        font-weight: 300;
+        overflow: hidden;
+    }
+
+    .keypad {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: #333;
+        padding: 1px;
+
+        button {
+            border: none;
+            height: 60px;
+            font-size: 20px;
+            background: #505050;
+            color: white;
+            cursor: pointer;
+            transition: background 0.1s;
+
+            &:active {
+                background: #707070;
+            }
+
+            &.function {
+                background: #3a3a3a;
+            }
+
+            &.operator {
+                background: #ff9f0a;
+                font-size: 24px;
+
+                &:active {
+                    background: #d48406;
+                }
+            }
+
+            &.zero {
+                grid-column: span 2;
+                text-align: left;
+                padding-left: 25px;
+            }
+        }
+    }
+}

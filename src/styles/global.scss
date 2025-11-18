@@ -1,0 +1,33 @@
+/* Global Variables & Reset */
+
+:root {
+    --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --dock-bg: rgba(255, 255, 255, 0.2);
+    --dock-border: rgba(255, 255, 255, 0.1);
+    --window-bg: rgba(255, 255, 255, 0.85);
+    --accent-color: #007aff;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    /* macOS-like behavior */
+}
+
+body {
+    font-family: var(--system-font);
+    background: #000;
+    /* Fallback */
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Default wallpaper placeholder */
+    background-image: url('https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-wwdc-2020-5120x2880-1455.jpg');
+}
