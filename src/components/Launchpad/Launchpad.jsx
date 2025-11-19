@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { IoSearch, IoClose } from 'react-icons/io5';
-import { useOS } from '../context/OSContext';
+import { useOS } from '../../context/OSContext';
 import './Launchpad.scss';
 
 const apps = [
