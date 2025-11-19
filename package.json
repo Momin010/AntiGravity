@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
-    "@webcontainer/api": "^1.1.9",
+    "@webcontainer/api": "^1.2.0",
     "framer-motion": "^10.16.4",
     "idb": "^8.0.0",
     "react": "^18.2.0",
