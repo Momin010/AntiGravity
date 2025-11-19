@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext.jsx';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 import './Settings.scss';
 
