@@ -7,7 +7,7 @@ export const useOS = () => useContext(OSContext);
 export const OSProvider = ({ children }) => {
     const [isLocked, setIsLocked] = useState(true);
     const [activeWindows, setActiveWindows] = useState([]);
-    const [wallpaper, setWallpaper] = useState('https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-wwdc-2020-5120x2880-1455.jpg');
+    const [wallpaper, setWallpaper] = useState('linear-gradient(135deg, #667eea 0%, #764ba2 100%)');
 
     const login = () => setIsLocked(false);
     const logout = () => setIsLocked(true);
