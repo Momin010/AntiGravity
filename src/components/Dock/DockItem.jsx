@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useTransform } from 'framer-motion';
-import { useOS } from '../context/OSContext';
+import { useOS } from '../../context/OSContext';
 
 const DockItem = ({ mouseX, app }) => {
     const { openWindow } = useOS();
