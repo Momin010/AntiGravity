@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Terminal } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import { WebLinksAddon } from 'xterm-addon-web-links';
-import WebContainerService from './services/WebContainerService.js';
+import WebContainerService from "../services/WebContainerService.js";
 import 'xterm/css/xterm.css';
 import './Terminal.scss';
 
