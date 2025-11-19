@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Editor from '@monaco-editor/react';
-import FileSystemService from '../../services/FileSystemService';
+import FileSystemService from '../services/FileSystemService';
 import './Xcode.scss';
 
 const Xcode = ({ filePath }) => {
